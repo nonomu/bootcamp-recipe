@@ -16,6 +16,13 @@ app.get('/sanity', function (req, res) {
 
 })
 
+app.get('/recipes/:ingredient', function (req, res) {
+    const ingredient = req.params.ingredient
+    request(`https://recipes-goodness.herokuapp.com/recipes/${ingredient}`, function (err, respones) {
+        let FoodData = JSON.parse(respones.body)
+            res.send(FoodData)        
+    })
+})
 
 
 
