@@ -1,15 +1,13 @@
-// Fill in the functions for your Renderer Class
-
 class Renderer {
-    _renderFood(food) {
-        console.log(players)
-        let source = $('#players-template').html()
+    _renderFood(data) {
+        console.log(data)
+        let source = $('#food-template').html()
         let template = Handlebars.compile(source)
-        let newHTML = template({ food })
-        $('.players-container').empty().append(newHTML)
+        let newHTML = template({data})
+        $('.food-container').append(newHTML)
     }
-    render(food) {
-       this._renderFood(food)
+    render(data) {
+       this._renderFood(data)
     }
 }
 
