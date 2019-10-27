@@ -12,7 +12,7 @@ app.use(express.static(path.join(__dirname, '..', 'node_modules')))
 
 app.get('/sanity', function (req, res) {
     const TeamName = req.params.teamName
-    res.send("OK")
+    res.send("OK Welcome To Exam")
 
 })
 
