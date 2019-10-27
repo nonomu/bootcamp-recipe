@@ -3,6 +3,11 @@ body{
     grid-template-rows: 1fr 9fr;
     height: 100vh;
 }
+a{
+    color: sienna;
+    display: block;
+    text-align: center;
+}
 #input-container{
     display: inline-block;
 }
@@ -24,10 +29,15 @@ button{
     padding: 5px;
 }
 .food-pic{
-    height: 40vh;
-    width: 40vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 
 }
 .food-info{
     text-align: center;
+}
+.ingredients{
+    display: inline-block;
 }
