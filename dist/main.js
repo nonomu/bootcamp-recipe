@@ -9,10 +9,17 @@ const fetchFoodData = function () {
     
 }
 $(".food-container").on("click",".food-pic",function () {
-   // [1].textContent
     console.log($(this)
     .closest(".food")
     .find(".ingredients")
     .find(".ingredient")[0]
-    .innerHTML); 
+    .innerHTML)
 })
+$(".food-container").on("click",".food-ingredients",function () {
+      $(this)
+     .closest(".food")
+     .find(".ingredients")
+     .find(".ingredient")
+     .css("display","block");
+      
+ })

@@ -15,7 +15,7 @@
             <div class="food">
                  <a class="food-name" href="{{href}}">{{title}}</a> <br>
                  <img class="food-pic" src="{{thumbnail}}" > 
-                 <p>ingredients :</p>
+                 <p class="food-ingredients">ingredients :</p>
                  <ul class="ingredients">   
                  {{#each ingredients}}
                 <li class="ingredient"> {{this}} </li>
@@ -32,7 +32,7 @@
 
     </div>
     <script src="./jquery/dist/jquery.js"></script>
-    <script src="./request\request.js"></script>
+    <!-- <script src="./request\request.js"></script> -->
     <script src="renderer.js"></script>
     <script src="main.js"></script>
 </body>

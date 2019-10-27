@@ -8,25 +8,40 @@ a{
     display: block;
     text-align: center;
 }
+li{
+    display: none;
+    font-size: 12px;
+}
+button{
+    width: 15vw;
+}
+.food-ingredients:hover{
+    background-color: white
+}
+.food-ingredients{
+    color: green;
+}
+.food-name:hover{
+    background-color: white;
+}
 #input-container{
     display: inline-block;
 }
 #ingredientInput{
     width: 70vw;
 }
-button{
-    width: 15vw;
-}
+
 .food-container{
     display: grid;
-    grid-gap: 7px;
+    grid-gap: 5px;
     grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
 }
 .food{
     background: rgb(255, 166, 0);
     position: relative;
-    font-size: 20px;
+    font-size: 15px;
     padding: 5px;
+    padding: 20px;
 }
 .food-pic{
     display: block;
@@ -39,5 +54,5 @@ button{
     text-align: center;
 }
 .ingredients{
-    display: inline-block;
+    display: block;
 }
