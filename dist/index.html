@@ -10,16 +10,15 @@
 </head>
 
 <body>
-        <script id="food-template" type="text/x-handlebars-template">
+    <script id="food-template" type="text/x-handlebars-template">
             {{#each data}}
-            
             <div class="food">
-                    <a class="food-name" href="{{href}}">{{title}}</a>
+                 <a class="food-name" href="{{href}}">{{title}}</a>
                  <img class="food-pic" src="{{thumbnail}}" > 
-                 <ul>
-                     <p>ingredients :</p>
+                 <p>ingredients :</p>
+                 <ul class="ingredients">   
                  {{#each ingredients}}
-                <li class="food-ingredients"> {{this}} </li>
+                <li class="ingredient"> {{this}} </li>
                 {{/each}}
                 </ul>
             </div>
