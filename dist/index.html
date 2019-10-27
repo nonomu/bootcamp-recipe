@@ -12,8 +12,9 @@
 <body>
         <script id="food-template" type="text/x-handlebars-template">
             {{#each data}}
+            
             <div class="food">
-                <p class="food-name">{{title}}</p>
+                    <a class="food-name" href="{{href}}">{{title}}</a>
                  <img class="food-pic" src="{{thumbnail}}" > 
                  <ul>
                      <p>ingredients :</p>
