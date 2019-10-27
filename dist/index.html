@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Totally Real Site</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+</head>
+
+<body>
+        <script id="food-template" type="text/x-handlebars-template">
+
+            {{#each food}}
+            <div class="food">
+                <p class="food-info">{{}} {{}} <br>{{}} </p>
+                <img class="food-pic" src="" > 
+                <p class="food-info">{{}}  </p>
+            </div>
+            {{/each}}
+         </script>
+    <div id="input-container">
+        <input type="text" id="FoodNameInput" placeholder="What's the Food Name?">
+        <button onclick=fetchFoodData()>Search</button>
+    </div>
+    <div class="food-container">
+
+    </div>
+    <script src="./jquery/dist/jquery.js"></script>
+    <script src="./request\request.js"></script>
+    <script src="renderer.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
