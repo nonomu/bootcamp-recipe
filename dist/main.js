@@ -2,6 +2,9 @@ const render = new Renderer()
 
 
 const fetchFoodData = function () {
-    console.log("food");
+    let input = $("#ingredientInput").val()
+    $.get(`/recipes/${input}`, function (FoodData) {
+        console.log(FoodData)
+    })
     
 }
